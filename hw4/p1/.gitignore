@@ -1,0 +1,39 @@
+cd ~/桌面/courses/CS100/HW4_student_starter
+
+cat > .gitignore <<'EOF'
+# Build trees and compiled artifacts (never commit these)
+build/
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+a.out
+
+# Local game state
+.snake-ui.conf
+
+# Downloaded archives and reference demos
+*.zip
+hw4-demo/
+
+# Editor and OS junk
+.DS_Store
+__MACOSX/
+*.swp
+*.swo
+*~
+
+# Tool caches and build systems
+__pycache__/
+.pytest_cache/
+.cache/
+ipch/
+.idea/
+compile_commands.json
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
+EOF
